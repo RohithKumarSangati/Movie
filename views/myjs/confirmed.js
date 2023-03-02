@@ -7,7 +7,7 @@ window.onload = function () {
         $.get(host+"/theatres/getsingletheatre/" + arr[1], (theatredata, status) => {
             $.post(host+"/users/getprofile", { curremail: localStorage.getItem("currentLoginUser") }, (xhr, status, responseText) => {
                 var userdata = JSON.parse(responseText.responseText);
-                alert(localStorage.getItem('currentLoginUser'))
+                // alert(localStorage.getItem('currentLoginUser'))
                 getmovietheatredata(moviedata, theatredata, userdata)
             })
 
@@ -15,7 +15,7 @@ window.onload = function () {
     })
 }
 function getmovietheatredata(moviedata, theatredata, userdata) {
-    alert('hello')
+    // alert('hello')
     var price = { "category D": 120, "category C": 150, "category B": 180, "category A": 200 }
     var dob = new Date(userdata.dob);
     var month_diff = Date.now() - dob.getTime();

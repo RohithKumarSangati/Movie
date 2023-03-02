@@ -39,7 +39,7 @@ window.onload = () => {
             for (x in obj) {
                 $("#a").append(
                     `<div class="card" style="display:flex;flex-direction:row;border-radius:20px;padding: 20px;justify-content:space-evenly;align-items: center;box-shadow: 1px 0px 3px 1px grey;background-color: white;color:black;">
-                    <img src="../${obj[x].theatreImage}" class="card-img-left" style="width:100px;height:100px;border-radius:50%;">
+                    <img src="${obj[x].theatreImage}" class="card-img-left" style="width:100px;height:100px;border-radius:50%;">
                     <div class="card-body" style="display:flex;flex-direction:row;justify-content: space-evenly;align-items:center;margin: 0%;padding: 0%;">
                         <div style="font-size: 20px;font-weight:600;">${obj[x].theatreName}</div>
                         <div style="font-size: 20px;font-weight:600;">${obj[x].location}</div>
@@ -55,7 +55,7 @@ window.onload = () => {
             for (x in obj) {
                 $("#b").append(
                     `<div class="card" style="display:flex;flex-direction:row;border-radius:20px;padding: 20px;justify-content:space-evenly;align-items: center;box-shadow: 1px 0px 3px 1px grey;background-color: white;color:black;">
-                        <img src="../${obj[x].theatreImage}" class="card-img-left" style="width:100px;height:100px;border-radius:50%;">
+                        <img src="${obj[x].theatreImage}" class="card-img-left" style="width:100px;height:100px;border-radius:50%;">
                         <div class="card-body" style="display:flex;flex-direction:row;justify-content: space-evenly;align-items:center;margin: 0%;padding: 0%;">
                             <div style="font-size: 20px;font-weight:600;">${obj[x].theatreName}</div>
                             <div style="font-size: 20px;font-weight:600;">${obj[x].location}</div>
@@ -71,7 +71,7 @@ window.onload = () => {
             for (x in obj) {
                 $("#c").append(
                     `<div class="card" style="display:flex;flex-direction:row;border-radius:20px;padding: 20px;justify-content:space-evenly;align-items: center;box-shadow: 1px 0px 3px 1px grey;background-color: white;color:black;">
-                    <img src="../${obj[x].theatreImage}" class="card-img-left" style="width:100px;height:100px;border-radius:50%;">
+                    <img src="${obj[x].theatreImage}" class="card-img-left" style="width:100px;height:100px;border-radius:50%;">
                     <div class="card-body" style="display:flex;flex-direction:row;justify-content: space-evenly;align-items:center;margin: 0%;padding: 0%;">
                         <div style="font-size: 20px;font-weight:600;">${obj[x].theatreName}</div>
                         <div style="font-size: 20px;font-weight:600;">${obj[x].location}</div>
@@ -87,7 +87,7 @@ window.onload = () => {
             for (x in obj) {
                 $("#d").append(
                     `<div class="card" style="display:flex;flex-direction:row;border-radius:20px;padding: 20px;justify-content:space-evenly;align-items: center;box-shadow: 1px 0px 3px 1px grey;background-color: white;color:black;">
-                        <img src="../${obj[x].theatreImage}" class="card-img-left" style="width:100px;height:100px;border-radius:50%;">
+                        <img src="${obj[x].theatreImage}" class="card-img-left" style="width:100px;height:100px;border-radius:50%;">
                         <div class="card-body" style="display:flex;flex-direction:row;justify-content: space-evenly;align-items:center;margin: 0%;padding: 0%;">
                             <div style="font-size: 20px;font-weight:600;">${obj[x].theatreName}</div>
                             <div style="font-size: 20px;font-weight:600;">${obj[x].location}</div>
@@ -416,7 +416,7 @@ function addMoviesToAdmin(arr) {
         // ele.className = "list-group-item pt-0";
         // ele.id = obj.movieId;
         var ele = `<div id = ${obj.movieId} class="row" style="color:black;padding:20px;display:flex;justify-content:center;align-items:center;margin:20px;background-color:white;border-radius:30px;box-shadow:2px 1px 5px 2px grey;">
-            <div class="col-lg-3"><img  src="../${obj.cardImage}" style="width:5rem;height:5rem;border-radius:50%"></div>
+            <div class="col-lg-3"><img  src="${obj.cardImage}" style="width:5rem;height:5rem;border-radius:50%"></div>
             <div class="col-lg-3" style="font-size:18px;font-weight:700" >${obj.name}</div>
             <div class="col-lg-3"><a style="padding:8px 20px;color:black;background-color:blue;border-radius:10px;"  href="reviews.html#${obj.movieId}"+>Reviews</a></div>
             <div class="col-lg-3"<div style="padding:6px 10px;color:remove;background-color:red;border-radius:10px;width:9%;cursor:pointer;text-align:center" onclick="deletemovie('${obj.movieId}')">Remove</div></div>

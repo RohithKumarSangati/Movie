@@ -50,7 +50,7 @@ function addtheatres(data, location) {
     for (x in data) {
         obj = data[x];
         var ele = document.createElement("div");
-        ele.innerHTML = "<div>" + obj.theatreName + "</div><div>" + obj.location + "</div><div>₹" + price[obj.category] + "</div> <div style='border-radius:10px;background-color: greenyellow;padding: 15px;cursor:pointer' onclick='bookmoviefrommovies(" + obj.theatreId + "," + window.location.hash.substring(1) + "," + price[obj.category] + ")'>Book Now!</div>"
+        ele.innerHTML = "<div>" + obj.theatreName + "</div><div>" + obj.location + "</div><div>₹" + price[obj.category] + "</div> <div style='border-radius:10px;background-color: greenyellow;padding: 15px;cursor:pointer;color:black' onclick='bookmoviefrommovies(" + obj.theatreId + "," + window.location.hash.substring(1) + "," + price[obj.category] + ")'>Book Now!</div>"
         ele.className = "col-lg-10 card";
         ele.style = "display:flex;flex-direction: row;gap:22%;justify-content:center;align-items: center;background-color:black;border-radius:20px;padding:30px 5px;font-weight:900;font-size:15px;box-shadow:2px 2px 8px 2px grey";
         $("#theatreRow").append(ele);
